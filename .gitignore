@@ -85,3 +85,6 @@ coverage
 
 # Mac meta file
 .DS_Store
+
+# vscode settings
+.vscode
