@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-boilerplate-esm",
+  "version": "1.0.0",
+  "description": "Node.js boilerplate",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "start": "bin/start.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitry-makovsky/nodejs-boilerplate-esm.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "node",
+    "nodejs",
+    "js",
+    "starter",
+    "jest",
+    "test",
+    "eslint",
+    "airbnb"
+  ],
+  "author": "Makovsky Dmitry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmitry-makovsky/nodejs-boilerplate-esm/issues"
+  },
+  "homepage": "https://github.com/dmitry-makovsky/nodejs-boilerplate-esm#readme",
+  "devDependencies": {
+  }
+}
