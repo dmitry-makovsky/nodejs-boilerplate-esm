@@ -1,21 +1,15 @@
 {
   "name": "nodejs-boilerplate-esm",
   "version": "1.0.0",
-  "description": "Node.js boilerplate",
-  "main": "index.js",
-  "type": "module",
-  "bin": {
-    "start": "bin/start.js"
-  },
-  "scripts": {
-    "test": "npx jest",
-    "start": "node bin/start.js",
-    "start:dev": "npx nodemon bin/start.js"
-  },
+  "description": "Node.js ESM boilerplate",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dmitry-makovsky/nodejs-boilerplate-esm.git"
   },
+  "bugs": {
+    "url": "https://github.com/dmitry-makovsky/nodejs-boilerplate-esm/issues"
+  },
+  "homepage": "https://github.com/dmitry-makovsky/nodejs-boilerplate-esm#readme",
   "keywords": [
     "boilerplate",
     "node",
@@ -29,12 +23,19 @@
   ],
   "author": "Makovsky Dmitry",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dmitry-makovsky/nodejs-boilerplate-esm/issues"
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "start": "bin/start.js"
   },
-  "homepage": "https://github.com/dmitry-makovsky/nodejs-boilerplate-esm#readme",
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --colors",
+    "start": "node bin/start.js",
+    "start:dev": "npx nodemon bin/start.js"
+  },
   "devDependencies": {
     "@jest/globals": "^27.2.0",
+    "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.2",
