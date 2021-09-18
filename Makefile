@@ -5,7 +5,7 @@ test:
 	npm run test
 
 dev: 
-	npm run dev
+	npm run start:dev
 
 start: 
 	npm start
